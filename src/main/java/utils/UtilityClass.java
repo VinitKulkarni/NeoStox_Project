@@ -18,7 +18,7 @@ public class UtilityClass {
 	String expectedUserName;
 	String expectedAmount;
 	//static String excelFilePath = "C:\\Users\\vinit\\eclipse-workspace\\NeoStox\\src\\test\\resources\\Neostox_data.xlsx";
-	static String excelFilePath = System.getProperty("user.dir")+"/src/test/resources/Neostox_data.xlsx";
+	static String excelFilePath = System.getProperty("user.dir")+"/test_data/Neostox_data.xlsx";
 	
 	//read data from excel sheet
 	public static String readDataFromExcelSheet(int rowIndex, int cellIndex) throws EncryptedDocumentException, IOException {
@@ -38,7 +38,7 @@ public class UtilityClass {
 	//read data from properties file
 	public static String readDataFromPropertiesFile(String key) throws IOException {
 		//String filePath = "C:\\Users\\vinit\\eclipse-workspace\\NeoStox\\src\\test\\resources\\NeoStoxFile.properties";
-		String filePath = System.getProperty("user.dir")+"/src/test/resources/NeoStoxFile.properties";
+		String filePath = System.getProperty("user.dir")+"/test_data/neostox1.properties";
 		Properties prop = new Properties();
 		FileInputStream reader = new FileInputStream(filePath);
 		prop.load(reader);
